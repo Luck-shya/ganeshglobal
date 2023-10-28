@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ganesh Global Solutions</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        overflow-x: hidden;
+      }
+      .container-1 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+          url("./stock/hero.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 85vh;
+      }
+      .container-2 {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 1)),
+          url("./stock/office-620822_1280.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 85vh;
+      }
+
+      .section:hover {
+        scale: 1.1;
+        transition: 0.3s ease-in-out;
+      }
+      .slide-left {
+        transform: translateX(-100%);
+        /* opacity: 0; */
+        transition: transform 0.5s ease, opacity 3s ease;
+      }
+      .hero-animation {
+        opacity: 0;
+        animation: fadeIn 5s forwards;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      .slide-right {
+        transform: translateX(100%);
+        /* opacity: 0; */
+        transition: transform 0.5s ease, opacity 3s ease;
+      }
+
+      .slide-in {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-light bg-light navbar-expand-lg"
+      style="box-shadow: 100px 0 100px white"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand" href="/">
+          <img src="./stock/logo.png" style="width: 150px"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="/">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#service">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">Contact Us</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="hero text-white bg-gradient">
+      <div class="py-5 px-5 container-1">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-lg-12">
+            <p class="lead text-white hero-animation">
+              <strong>Welcome To</strong>
+            </p>
+            <h1 class="display-5 fw-bold lh-1 mb-3 hero-animation">
+              GANESH GLOBAL SOLUTIONS
+            </h1>
+            <p class="lead view hero-animation">
+              GANESH GLOBAL Solutions is a leading Business Process Outsourcing
+              (BPO) solutions provider based in New Delhi, India.
+            </p>
+            <div class="d-grid d-md-flex justify-content-md-start">
+              <div
+                class="text-center d-grid d-md-flex justify-content-md-start"
+              >
+                <a href="/" class="btn btn-outline-light btn-lg px-4">
+                  Learn More
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features">
+      <div class="container px-4 py-5" id="featured-3">
+        <h1 class="pb-2 border-bottom text-center">Why Choose Us?</h1>
+        <div class="row g-5 row-cols-1 py-5 row-cols-lg-3">
+          <div class="feature col section slide-left">
+            <div class="feature-icon bg-primary bg-gradient"></div>
+            <div class="text-center">
+              <img src="./stock/003-team-management.png" />
+            </div>
+
+            <h3 class="text-primary text-center">Experienced Personnel</h3>
+
+            <p class="text-secondary">
+              Our Professional Staff services are characterized by a
+              results-oriented approach, meticulous attention to detail, and an
+              unwavering dedication to excellence.
+            </p>
+          </div>
+          <div class="feature col section slide-right">
+            <div class="feature-icon bg-primary bg-gradient"></div>
+            <div class="text-center">
+              <img src="./stock/002-save-money.png" />
+            </div>
+
+            <h3 class="text-primary text-center">Economical Alternatives</h3>
+            <p class="text-secondary">
+              We offer economical solutions that assist our clients in reducing
+              expenses and enhancing their profitability.
+            </p>
+          </div>
+          <div class="feature col section slide-right">
+            <div class="feature-icon bg-primary bg-gradient"></div>
+            <div class="text-center">
+              <img src="./stock/004-badge.png" />
+            </div>
+
+            <h3 class="text-primary text-center">High-Standard Offerings</h3>
+            <p class="text-secondary">
+              Our commitment revolves around delivering top-notch services to
+              our clients. We maintain a quality assurance team to ensure that
+              our services adhere to the highest industry standards.
+            </p>
+          </div>
+          <div class="feature col section slide-right">
+            <div class="feature-icon bg-primary bg-gradient"></div>
+            <div class="text-center">
+              <img src="./stock/005-team-work.png" />
+            </div>
+
+            <h3 class="text-primary text-center">Seasoned Staff</h3>
+            <p class="text-secondary">
+              Our team boasts extensive experience in offering BPO services to
+              clients spanning various industries.
+            </p>
+          </div>
+          <div class="feature col section slide-left">
+            <div class="feature-icon bg-primary bg-gradient"></div>
+            <div class="text-center">
+              <img src="./stock/001-solution.png" />
+            </div>
+            <h3 class="text-primary text-center">Tailored Answers</h3>
+            <p class="text-secondary">
+              We present personalized solutions to our clients in accordance
+              with their specific needs. Our team collaborates closely with
+              clients to grasp their requirements and deliver bespoke solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about bg-dark text-white" id="about">
+      <div class="container col-xxl-8 px-4 py-5">
+        <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
+          <div class="col-12 col-sm-12 col-lg-6 text-center">
+            <img
+              src="./stock/meeting-2284501_640.jpg"
+              class="d-block mx-lg-auto img-fluid"
+              alt="Bootstrap Themes"
+              width="700"
+              height="500"
+              loading="lazy"
+            />
+          </div>
+          <div class="col-lg-6">
+            <h1 class="display-5 text-center fw-bold lh-1 mb-3">About us</h1>
+            <h2 class="display-7 lh-1 mb-3">
+              Leading Business Process Outsourcing (BPO) solutions provider
+            </h2>
+            <p class="lead">
+              "Ganesh Global, a New Delhi-based BPO leader, delivers
+              cost-effective, high-quality services. Our expert team excels in
+              data entry, customer support, telemarketing, lead generation, and
+              back-office operations, leveraging the latest tech and best
+              practices."
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="services" id="service">
+      <div class="container px-4 py-5" id="hanging-icons">
+        <h1 class="pb-2 border-bottom text-center">Our Services</h1>
+        <div class="row g-5 py-5 row-cols-1 row-cols-lg-3">
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square bg-light text-dark flex-shrink-0 me-3"
+            ></div>
+            <div class="section slide-right">
+              <h3>Precise Data Input Solutions</h3>
+              <p>
+                We offer accurate and timely data entry services to our clients.
+                Our team boasts extensive experience in managing data entry
+                projects of various types and complexities.
+              </p>
+              <div class="text-center">
+                <a href="/" class="btn btn-sm btn-primary"> Learn More </a>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square bg-light text-dark flex-shrink-0 me-3"
+            ></div>
+            <div class="section slide-right">
+              <h3>Exceptional Client Assistance</h3>
+              <p>
+                Our customer support team ensures that our clients' customers
+                are completely satisfied by delivering outstanding services. We
+                handle inquiries, address complaints, and provide support
+                through various communication channels.
+              </p>
+              <div class="text-center">
+                <a href="/" class="btn btn-sm btn-primary"> Learn More </a>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square bg-light text-dark flex-shrink-0 me-3"
+            ></div>
+            <div class="section slide-left">
+              <h3>Lead Generation via Phone</h3>
+              <p>
+                With our team of experienced telemarketers, we specialize in
+                generating leads, promoting products and services, and
+                conducting surveys. We can help our clients boost their sales
+                and expand their customer base.
+              </p>
+              <div class="text-center">
+                <a href="/" class="btn btn-sm btn-primary"> Learn More </a>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square bg-light text-dark flex-shrink-0 me-3"
+            ></div>
+            <div class="section slide-right">
+              <h3>Expanding Customer Base</h3>
+              <p>
+                We provide lead generation services to help our clients reach
+                potential customers and increase their sales. Our lead
+                generation techniques include online marketing, social media,
+                and telemarketing.
+              </p>
+              <div class="text-center">
+                <a href="/" class="btn btn-sm btn-primary"> Learn More </a>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square bg-light text-dark flex-shrink-0 me-3"
+            ></div>
+            <div class="section slide-left">
+              <h3>Efficient Behind-the-Scenes Tasks</h3>
+              <p>
+                We manage various back-office operations such as data
+                management, order processing, and invoice handling. Our team
+                ensures that these tasks are executed accurately and on time.
+              </p>
+              <div class="text-center">
+                <a href="/" class="btn btn-sm btn-primary"> Learn More </a>
+              </div>
+            </div>
+          </div>
+          <div class="col d-flex align-items-start">
+            <div
+              class="icon-square bg-light text-dark flex-shrink-0 me-3"
+            ></div>
+            <div class="section slide-left">
+              <h3>Information Technology Solutions</h3>
+              <p>
+                Our IT services encompass a range of offerings, including
+                software development, website design and development, and mobile
+                app development.
+              </p>
+              <div class="text-center">
+                <a href="/" class="btn btn-sm btn-primary"> Learn More </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-dark text-white container-2" id="contact">
+      <h1 class="text-center">Contact Us</h1>
+      <div class="row align-items-center">
+        <div class="col-md-10 px-5 col-lg-5">
+          <form action="/submit" method="post">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input
+                type="text"
+                class="form-control"
+                id="name"
+                name="name"
+                placeholder="Name"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input
+                type="email"
+                class="form-control"
+                id="email"
+                name="email"
+                placeholder="Email"
+                required
+              />
+            </div>
+            <div class="form-group">
+              <label for="phone">Phone:</label>
+              <input
+                type="tel"
+                class="form-control"
+                id="phone"
+                name="phone"
+                placeholder="Phone"
+              />
+            </div>
+            <div class="form-group">
+              <label for="message">Message:</label>
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary my-5">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="container">
+        <footer
+          class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top"
+        >
+          <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text-muted"
+              >Copyright © 2023 Ganesh Global Solutions<br />
+              All Rights Reserved</span
+            >
+          </div>
+
+          <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+            <li class="ms-3">
+              <a href="/privacy-policy"
+                ><button class="btn btn-primary">Privacy Policy</button></a
+              >
+            </li>
+          </ul>
+        </footer>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      // JavaScript to handle the hero section animation on page load
+      const heroSection = document.querySelector(".hero");
+
+      function animateHeroSection() {
+        heroSection.classList.add("slide-in");
+      }
+
+      // Animate the hero section when the page has loaded
+      document.addEventListener("DOMContentLoaded", animateHeroSection);
+
+      // JavaScript to handle the sliding animation for other sections on scroll
+      const sections = document.querySelectorAll(".section");
+
+      function checkSlide() {
+        sections.forEach((section) => {
+          const slideInAt =
+            window.scrollY + window.innerHeight - section.clientHeight / 2;
+          const sectionBottom = section.offsetTop + section.clientHeight;
+          const isHalfShown = slideInAt > section.offsetTop;
+          const isNotScrolledPast = window.scrollY < sectionBottom;
+
+          if (isHalfShown && isNotScrolledPast) {
+            section.classList.add("slide-in");
+          }
+        });
+      }
+
+      // Add a scroll event listener for other sections
+      window.addEventListener("scroll", checkSlide);
+      document.addEventListener("DOMContentLoaded", function () {
+        const contactForm = document.getElementById("contactForm");
+
+        contactForm.addEventListener("submit", function (e) {
+          e.preventDefault(); // Prevent the form from submitting traditionally
+
+          // Get form data
+          const formData = new FormData(contactForm);
+
+          // You can send the data to the server using fetch or XMLHttpRequest
+          // For simplicity, let's just log the data to the console
+          for (const pair of formData.entries()) {
+            console.log(pair[0] + ": " + pair[1]);
+          }
+
+          // Clear the form fields
+          contactForm.reset();
+        });
+      });
+    </script>
+  </body>
+</html>
